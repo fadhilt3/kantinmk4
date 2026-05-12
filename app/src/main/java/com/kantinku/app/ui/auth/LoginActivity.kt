@@ -10,9 +10,12 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.kantinku.app.R
+import com.kantinku.app.api.ApiClient
+import com.kantinku.app.api.ApiService
+import com.kantinku.app.model.LoginRequest
+import com.kantinku.app.model.LoginResponse
 import com.kantinku.app.session.SessionManager.Companion.getInstance
 import com.kantinku.app.ui.home.MainActivity
-import java.util.Locale
 
 class LoginActivity : AppCompatActivity() {
     private var etEmail: EditText? = null
@@ -30,24 +33,15 @@ class LoginActivity : AppCompatActivity() {
 
         btnLogin.setOnClickListener { v: View? -> doLogin() }
         tvRegister.setOnClickListener { v: View? ->
-            startActivity(
-                Intent(
-                    this,
-                    RegisterActivity::class.java
-                )
-            )
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
         tvForgot.setOnClickListener { v: View? ->
-            Toast.makeText(
-                this,
-                "Fitur reset password segera hadir!",
-                Toast.LENGTH_SHORT
-            ).show()
+            Toast.makeText(this, "Fitur reset password segera hadir!", Toast.LENGTH_SHORT).show()
         }
     }
 
     private fun doLogin() {
-        val email = etEmail!!.text.toString().trim { it <= ' ' }
+        val email = etEmail!!.text.toString().trim()
         val password = etPassword!!.text.toString()
 
         if (TextUtils.isEmpty(email)) {
@@ -63,14 +57,45 @@ class LoginActivity : AppCompatActivity() {
             return
         }
 
-        // Simulasi login - ambil nama dari email
-        var name = email.split("@".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[0]
-        name = name.substring(0, 1).uppercase(Locale.getDefault()) + name.substring(1)
-        getInstance(this).saveLogin(name, email, name.lowercase(Locale.getDefault()))
+        val apiService = ApiClient.client.create(ApiService::class.java)
+        val request = LoginRequest(email, password)
 
-        Toast.makeText(this, "Selamat datang, $name! 👋", Toast.LENGTH_SHORT).show()
-        val intent = Intent(this, MainActivity::class.java)
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
-        startActivity(intent)
+        apiService.login(request).enqueue(object : retrofit2.Callback<LoginResponse> {
+            override fun onResponse(
+                call: retrofit2.Call<LoginResponse>,
+                response: retrofit2.Response<LoginResponse>
+            ) {
+                if (response.isSuccessful) {
+                    val body = response.body()!!
+                    getInstance(this@LoginActivity).saveLogin(
+                        body.user.name,
+                        body.user.email,
+                        body.access_token
+                    )
+                    Toast.makeText(
+                        this@LoginActivity,
+                        "Selamat datang, ${body.user.name}! 👋",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    startActivity(intent)
+                } else {
+                    Toast.makeText(
+                        this@LoginActivity,
+                        "Email atau password salah!",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
+
+            override fun onFailure(call: retrofit2.Call<LoginResponse>, t: Throwable) {
+                Toast.makeText(
+                    this@LoginActivity,
+                    "Gagal koneksi: ${t.message}",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        })
     }
 }
