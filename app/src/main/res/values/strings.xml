@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KantinKu</string>
+    <string name="hint_nama">Nama Lengkap</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_pass">Konfirmasi Password</string>
+    <string name="hint_search">Cari makanan, minuman...</string>
+</resources>

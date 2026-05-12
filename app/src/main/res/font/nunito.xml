@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Download Nunito font from Google Fonts and place the .ttf files in res/font/:
+    - nunito_regular.ttf
+    - nunito_semibold.ttf
+    - nunito_bold.ttf
+    - nunito_extrabold.ttf
+    - nunito_black.ttf
+
+    Or use this font family definition with downloadable fonts.
+-->
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:fontProviderAuthority="com.google.android.gms.fonts"
+    app:fontProviderPackage="com.google.android.gms"
+    app:fontProviderQuery="Nunito"
+    app:fontProviderCerts="@array/com_google_android_gms_fonts_certs">
+</font-family>
