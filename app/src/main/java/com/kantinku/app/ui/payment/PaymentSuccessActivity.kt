@@ -24,21 +24,21 @@ class PaymentSuccessActivity : AppCompatActivity() {
             method ?: "QRIS"
 
         val sb = StringBuilder()
-        for (ci in CartManager.getInstance().items) sb.append(ci.food.emoji).append(" ")
+        for (ci in CartManager.instance.getItems()) sb.append(ci.food.emoji).append(" ")
             .append(ci.food.name)
             .append(" x").append(ci.qty).append("\n")
         (findViewById<View>(R.id.tv_items) as TextView).text =
             sb.toString().trim { it <= ' ' }
         (findViewById<View>(R.id.tv_total) as TextView).text =
-            CartManager.rupiah(CartManager.getInstance().total)
+            CartManager.rupiah(CartManager.instance.total)
 
         (findViewById<View>(R.id.btn_history) as Button).setOnClickListener { v: View? ->
-            CartManager.getInstance().clearCart()
+            CartManager.instance.clearCart()
             startActivity(Intent(this, HistoryActivity::class.java))
             finish()
         }
         (findViewById<View>(R.id.btn_home) as Button).setOnClickListener { v: View? ->
-            CartManager.getInstance().clearCart()
+            CartManager.instance.clearCart()
             val i = Intent(this, MainActivity::class.java)
             i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(i)

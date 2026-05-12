@@ -48,7 +48,7 @@ class HomeFragment : Fragment() {
         }
 
         // -- Data --
-        val allMenu = DataProvider.getAllMenu()
+        val allMenu = DataProvider.allMenu
 
         // -- Popular scroll --
         val popularContainer = v.findViewById<LinearLayout>(R.id.popular_container)
@@ -72,7 +72,7 @@ class HomeFragment : Fragment() {
 
         // -- Category chips --
         val catContainer = v.findViewById<LinearLayout>(R.id.category_container)
-        val cats = DataProvider.getCategories()
+        val cats = DataProvider.categories
         val catLabels = arrayOf(
             "✨ Semua", "🍙 Nasi", "🍜 Mie",
             "🥣 Kuah", "🍗 Lauk", "🥗 Sayur",
@@ -146,7 +146,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun addToCart(food: FoodItem) {
-        CartManager.getInstance().addItem(food)
+        CartManager.instance.addItem(food)
         (activity as? MainActivity)?.updateBadge()
         Toast.makeText(requireContext(), "${food.name} ditambahkan! 🛒", Toast.LENGTH_SHORT).show()
     }

@@ -1,0 +1,36 @@
+com.kantinku.app-lifecycle-runtime-2.6.2-0 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\00f8c54850e0c6eacac384ee3c7f6469\transformed\lifecycle-runtime-2.6.2\res
+com.kantinku.app-fragment-1.3.6-1 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\0bacb6c94ebaa688c2bfe4425748c584\transformed\fragment-1.3.6\res
+com.kantinku.app-transition-1.2.0-2 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\0e3848c48e2e438efcb996ac8cd52a4a\transformed\transition-1.2.0\res
+com.kantinku.app-jetified-annotation-experimental-1.4.0-3 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\186e25d479a191ec7fb05cfac892d7e8\transformed\jetified-annotation-experimental-1.4.0\res
+com.kantinku.app-appcompat-1.6.1-4 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\26b5e0896c48cc15bbc7f233780fee1b\transformed\appcompat-1.6.1\res
+com.kantinku.app-constraintlayout-2.1.4-5 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\29edd52866b6fa1ae06577ee5e243371\transformed\constraintlayout-2.1.4\res
+com.kantinku.app-lifecycle-livedata-core-2.6.2-6 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\353b394ecac805808407bd7ce0fe1a76\transformed\lifecycle-livedata-core-2.6.2\res
+com.kantinku.app-jetified-lifecycle-viewmodel-savedstate-2.6.2-7 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\3aaaf9125b2ef61ad363ec36945dda35\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.2\res
+com.kantinku.app-jetified-viewpager2-1.1.0-beta02-8 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\3df185cc69fc64378949289971c3cb09\transformed\jetified-viewpager2-1.1.0-beta02\res
+com.kantinku.app-lifecycle-livedata-2.6.2-9 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\48def2428ffe12670a22f9359249ca95\transformed\lifecycle-livedata-2.6.2\res
+com.kantinku.app-coordinatorlayout-1.1.0-10 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\4a43565e416613b9a3dfb25bdecedf46\transformed\coordinatorlayout-1.1.0\res
+com.kantinku.app-drawerlayout-1.1.1-11 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\4d2915b6e38e368768b6b28362b0d526\transformed\drawerlayout-1.1.1\res
+com.kantinku.app-core-1.13.1-12 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\50a6236c5dc0d621f62c10c446b4fe4a\transformed\core-1.13.1\res
+com.kantinku.app-jetified-startup-runtime-1.1.1-13 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\661bfd82e753f4d17de6a2d25bd9760e\transformed\jetified-startup-runtime-1.1.1\res
+com.kantinku.app-cardview-1.0.0-14 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\7e680e04c3e30f21be988b5d31832d1e\transformed\cardview-1.0.0\res
+com.kantinku.app-jetified-savedstate-1.2.1-15 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\83189e1f98b5a7a9fa59555da3b0f917\transformed\jetified-savedstate-1.2.1\res
+com.kantinku.app-jetified-appcompat-resources-1.6.1-16 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\966885f495b5364c3428b32bd3883477\transformed\jetified-appcompat-resources-1.6.1\res
+com.kantinku.app-jetified-emoji2-1.2.0-17 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\96e1bb14d929d632b832200272b859b0\transformed\jetified-emoji2-1.2.0\res
+com.kantinku.app-jetified-circleimageview-3.1.0-18 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\988183f09326261193c0be5fccc0b4f3\transformed\jetified-circleimageview-3.1.0\res
+com.kantinku.app-jetified-customview-poolingcontainer-1.0.0-19 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\9f5ddf76a60b594a3462dd872a1b4015\transformed\jetified-customview-poolingcontainer-1.0.0\res
+com.kantinku.app-lifecycle-viewmodel-2.6.2-20 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\a2f0b5117a29eb10ad841d522838a38c\transformed\lifecycle-viewmodel-2.6.2\res
+com.kantinku.app-jetified-profileinstaller-1.3.0-21 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\a36362d8da3f5cc0f218151e2aebe883\transformed\jetified-profileinstaller-1.3.0\res
+com.kantinku.app-jetified-core-ktx-1.13.1-22 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\b1852030ccfa3f4394aac3108645f8dc\transformed\jetified-core-ktx-1.13.1\res
+com.kantinku.app-jetified-lifecycle-process-2.6.2-23 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\b65a13d195f50f671e3fe809f60e6d2e\transformed\jetified-lifecycle-process-2.6.2\res
+com.kantinku.app-jetified-activity-1.8.0-24 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\bbcc4b690830c7ef89a0751a6a60cbd3\transformed\jetified-activity-1.8.0\res
+com.kantinku.app-material-1.11.0-25 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\c383eee0678a8e695b2e2a3138370dc8\transformed\material-1.11.0\res
+com.kantinku.app-jetified-emoji2-views-helper-1.2.0-26 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\cab49b2fc7a0b56fabf1b7841afc95be\transformed\jetified-emoji2-views-helper-1.2.0\res
+com.kantinku.app-core-runtime-2.2.0-27 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\e56cdac6f0fa038bb9941bd0a8e70e1b\transformed\core-runtime-2.2.0\res
+com.kantinku.app-recyclerview-1.3.2-28 C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\ede16e4be98525d72a44825675bb20f1\transformed\recyclerview-1.3.2\res
+com.kantinku.app-pngs-29 E:\kantinmk4\app\build\generated\res\pngs\debug
+com.kantinku.app-resValues-30 E:\kantinmk4\app\build\generated\res\resValues\debug
+com.kantinku.app-packageDebugResources-31 E:\kantinmk4\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.kantinku.app-packageDebugResources-32 E:\kantinmk4\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.kantinku.app-merged_res-33 E:\kantinmk4\app\build\intermediates\merged_res\debug
+com.kantinku.app-debug-34 E:\kantinmk4\app\src\debug\res
+com.kantinku.app-main-35 E:\kantinmk4\app\src\main\res

@@ -37,7 +37,7 @@ class MenuFragment : Fragment() {
         super.onViewCreated(v, savedInstanceState)
 
         // Gunakan nama fungsi asli dari Java
-        val allMenu = DataProvider.getAllMenu()
+        val allMenu = DataProvider.allMenu
         val rv = v.findViewById<RecyclerView>(R.id.rv_menu)
         rv.layoutManager = LinearLayoutManager(requireContext())
 
@@ -61,7 +61,7 @@ class MenuFragment : Fragment() {
 
         // Category chips
         val catContainer = v.findViewById<LinearLayout>(R.id.category_filter)
-        val cats = DataProvider.getCategories()
+        val cats = DataProvider.categories
         val labels = arrayOf("Semua", "Nasi", "Mie", "Kuah", "Lauk", "Sayur", "Minuman", "Snack")
 
         for (i in cats.indices) {
@@ -105,7 +105,7 @@ class MenuFragment : Fragment() {
 
     private fun addToCart(food: FoodItem) {
         // Pastikan getInstance() terpanggil dengan benar
-        CartManager.getInstance().addItem(food)
+        CartManager.instance.addItem(food)
         (activity as? MainActivity)?.updateBadge()
         Toast.makeText(requireContext(), "${food.name} ditambahkan!", Toast.LENGTH_SHORT).show()
     }

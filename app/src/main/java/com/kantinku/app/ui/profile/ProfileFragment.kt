@@ -68,7 +68,7 @@ class ProfileFragment : Fragment() {
             ).show()
         }
         v.findViewById<View>(R.id.row_logout).setOnClickListener { x: View? ->
-            CartManager.getInstance().clearCart()
+            CartManager.instance.clearCart()
             sm.logout()
             val intent = Intent(requireContext(), LoginActivity::class.java)
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)

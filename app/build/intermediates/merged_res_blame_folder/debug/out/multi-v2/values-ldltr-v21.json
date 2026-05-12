@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.kantinku.app-mergeDebugResources-31:/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ASUS ROG G513\\.gradle\\caches\\9.0-milestone-1\\transforms\\26b5e0896c48cc15bbc7f233780fee1b\\transformed\\appcompat-1.6.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

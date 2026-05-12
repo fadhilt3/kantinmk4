@@ -27,7 +27,7 @@ class PaymentActivity : AppCompatActivity() {
 
         (findViewById<View>(R.id.btn_back) as ImageButton).setOnClickListener { v: View? -> finish() }
         (findViewById<View>(R.id.tv_total) as TextView).text =
-            CartManager.rupiah(CartManager.getInstance().total)
+            CartManager.rupiah(CartManager.instance.total)
 
         // Show correct panel
         val panelQris = findViewById<View>(R.id.panel_qris)

@@ -38,7 +38,6 @@ class CartFragment : Fragment() {
         val btnCheckout = v.findViewById<Button>(R.id.btn_checkout)
         val tvClear = v.findViewById<TextView>(R.id.tv_clear)
 
-        // Perbaikan: Gunakan ?. agar tidak error "Only safe (?.) or non-null asserted (!!.) calls"
         rv?.layoutManager = LinearLayoutManager(requireContext())
         rv?.addItemDecoration(
             DividerItemDecoration(
@@ -47,16 +46,16 @@ class CartFragment : Fragment() {
             )
         )
 
-        adapter = CartAdapter(CartManager.getInstance().items) { refresh() }
+        adapter = CartAdapter(CartManager.instance.getItems()) { refresh() }
         rv?.adapter = adapter
 
         tvClear.setOnClickListener {
-            CartManager.getInstance().clearCart()
+            CartManager.instance.clearCart()
             refresh()
         }
 
         btnCheckout.setOnClickListener {
-            if (!CartManager.getInstance().isEmpty) {
+            if (!CartManager.instance.isEmpty) {
                 startActivity(Intent(requireContext(), CheckoutActivity::class.java))
             }
         }
@@ -65,16 +64,14 @@ class CartFragment : Fragment() {
     }
 
     private fun refresh() {
-        // Perbaikan: Gunakan ?. untuk memanggil fungsi refresh pada adapter
-        adapter?.refresh(CartManager.getInstance().items)
+        adapter?.refresh(CartManager.instance.getItems())
 
-        val empty = CartManager.getInstance().isEmpty
+        val empty = CartManager.instance.isEmpty
         rv?.visibility = if (empty) View.GONE else View.VISIBLE
         emptyState?.visibility = if (empty) View.VISIBLE else View.GONE
 
-        // Perbaikan: Gunakan safe call ?. pada TextView
-        tvSubtotal?.text = CartManager.rupiah(CartManager.getInstance().subtotal)
-        tvTotal?.text = CartManager.rupiah(CartManager.getInstance().total)
+        tvSubtotal?.text = CartManager.rupiah(CartManager.instance.subtotal)
+        tvTotal?.text = CartManager.rupiah(CartManager.instance.total)
 
         (activity as? MainActivity)?.updateBadge()
     }

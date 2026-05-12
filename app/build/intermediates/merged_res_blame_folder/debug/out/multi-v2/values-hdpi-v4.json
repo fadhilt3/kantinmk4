@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.kantinku.app-mergeDebugResources-31:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ASUS ROG G513\\.gradle\\caches\\9.0-milestone-1\\transforms\\26b5e0896c48cc15bbc7f233780fee1b\\transformed\\appcompat-1.6.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

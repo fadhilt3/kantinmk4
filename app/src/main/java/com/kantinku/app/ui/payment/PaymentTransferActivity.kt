@@ -21,7 +21,7 @@ class PaymentTransferActivity : AppCompatActivity() {
         val tvTotal = findViewById<TextView>(R.id.tv_total)
 
         btnBack.setOnClickListener { v: View? -> finish() }
-        tvTotal.text = CartManager.rupiah(CartManager.getInstance().total)
+        tvTotal.text = CartManager.rupiah(CartManager.instance.total)
 
         findViewById<View>(R.id.btn_copy_bca).setOnClickListener { v: View? ->
             Toast.makeText(

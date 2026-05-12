@@ -20,7 +20,7 @@ class PaymentTunaiActivity : AppCompatActivity() {
         val tvTotal = findViewById<TextView>(R.id.tv_total)
 
         btnBack.setOnClickListener { v: View? -> finish() }
-        tvTotal.text = CartManager.rupiah(CartManager.getInstance().total)
+        tvTotal.text = CartManager.rupiah(CartManager.instance.total)
 
         btnConfirm.setOnClickListener { v: View? ->
             val intent = Intent(

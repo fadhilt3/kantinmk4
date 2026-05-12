@@ -1,0 +1,242 @@
+[
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_input_focused.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_input_focused.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_badge.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_badge.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_chip_active.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_chip_active.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_activity_login.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_activity_payment_tunai.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/activity_payment_tunai.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_primary_gradient.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_primary_gradient.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_promo.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_promo.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_item_food_card.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/item_food_card.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_activity_payment_transfer.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/activity_payment_transfer.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/mipmap-xhdpi_ic_launcher.xml.flat",
+        "source": "com.kantinku.app-main-35:/mipmap-xhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_notif_dot.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_notif_dot.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_tag_red.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_tag_red.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_search.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_search.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_btn_accent.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_btn_accent.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_fragment_cart.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/fragment_cart.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_item_food_popular.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/item_food_popular.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_item_notification.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/item_notification.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_bottom_nav.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_bottom_nav.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_tag_blue.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_tag_blue.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_card.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_card.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/mipmap-xxhdpi_ic_launcher.xml.flat",
+        "source": "com.kantinku.app-main-35:/mipmap-xxhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_input.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_input.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/font_nunito.xml.flat",
+        "source": "com.kantinku.app-main-35:/font/nunito.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_activity_payment_ewallet.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/activity_payment_ewallet.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_qty.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_qty.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/mipmap-xhdpi_ic_launcher_round.xml.flat",
+        "source": "com.kantinku.app-main-35:/mipmap-xhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_btn_primary.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_btn_primary.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_qty_button.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_qty_button.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_item_cart.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/item_cart.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_activity_register.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_activity_payment_success.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/activity_payment_success.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "com.kantinku.app-main-35:/mipmap-hdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_chip_default.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_chip_default.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/mipmap-hdpi_ic_launcher_round.xml.flat",
+        "source": "com.kantinku.app-main-35:/mipmap-hdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/mipmap-xxhdpi_ic_launcher_round.xml.flat",
+        "source": "com.kantinku.app-main-35:/mipmap-xxhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_activity_checkout.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/activity_checkout.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_activity_payment.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/activity_payment.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/mipmap-mdpi_ic_launcher.xml.flat",
+        "source": "com.kantinku.app-main-35:/mipmap-mdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_chip.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_chip.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_activity_notification.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/activity_notification.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_activity_history.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/activity_history.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_tag_green.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_tag_green.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_item_food.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/item_food.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher_round.xml.flat",
+        "source": "com.kantinku.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_button_orange.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_button_orange.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher.xml.flat",
+        "source": "com.kantinku.app-main-35:/mipmap-xxxhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_activity_splash.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_fragment_menu.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/fragment_menu.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_btn_outline.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_btn_outline.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_activity_onboarding.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/activity_onboarding.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_tag_yellow.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_tag_yellow.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/mipmap-mdpi_ic_launcher_round.xml.flat",
+        "source": "com.kantinku.app-main-35:/mipmap-mdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_fragment_home.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_avatar.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_avatar.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_activity_payment_qris.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/activity_payment_qris.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_activity_main.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_activity_welcome.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/activity_welcome.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/layout_fragment_profile.xml.flat",
+        "source": "com.kantinku.app-main-35:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_button_outline.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_button_outline.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-33:/drawable_bg_tag_orange.xml.flat",
+        "source": "com.kantinku.app-main-35:/drawable/bg_tag_orange.xml"
+    }
+]

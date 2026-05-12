@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bg_white" android:fillViewport="true">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Banner -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="200dp"
+            android:orientation="vertical" android:gravity="bottom"
+            android:background="@drawable/bg_primary_gradient" android:padding="28dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Buat Akun Baru" android:textSize="24sp" android:textStyle="bold"
+                android:textColor="@color/text_white"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Daftar dan mulai pesan favoritmu!" android:textSize="13sp"
+                android:textColor="#CCFFFFFF" android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="24dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Nama Lengkap" android:textSize="13sp" android:textStyle="bold"
+                android:textColor="@color/text_primary" android:layout_marginBottom="6dp"/>
+            <EditText android:id="@+id/et_name"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:hint="Nama lengkap kamu" android:background="@drawable/bg_input"
+                android:textColor="@color/text_primary" android:textColorHint="@color/text_hint"
+                android:textSize="14sp" android:paddingStart="16dp" android:paddingEnd="16dp"
+                android:inputType="textPersonName" android:layout_marginBottom="14dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Username" android:textSize="13sp" android:textStyle="bold"
+                android:textColor="@color/text_primary" android:layout_marginBottom="6dp"/>
+            <EditText android:id="@+id/et_username"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:hint="Username unik kamu" android:background="@drawable/bg_input"
+                android:textColor="@color/text_primary" android:textColorHint="@color/text_hint"
+                android:textSize="14sp" android:paddingStart="16dp" android:paddingEnd="16dp"
+                android:inputType="text" android:layout_marginBottom="14dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Email" android:textSize="13sp" android:textStyle="bold"
+                android:textColor="@color/text_primary" android:layout_marginBottom="6dp"/>
+            <EditText android:id="@+id/et_email"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:hint="contoh@email.com" android:background="@drawable/bg_input"
+                android:textColor="@color/text_primary" android:textColorHint="@color/text_hint"
+                android:textSize="14sp" android:paddingStart="16dp" android:paddingEnd="16dp"
+                android:inputType="textEmailAddress" android:layout_marginBottom="14dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Password" android:textSize="13sp" android:textStyle="bold"
+                android:textColor="@color/text_primary" android:layout_marginBottom="6dp"/>
+            <EditText android:id="@+id/et_password"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:hint="Minimal 6 karakter" android:background="@drawable/bg_input"
+                android:textColor="@color/text_primary" android:textColorHint="@color/text_hint"
+                android:textSize="14sp" android:paddingStart="16dp" android:paddingEnd="16dp"
+                android:inputType="textPassword" android:layout_marginBottom="14dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Konfirmasi Password" android:textSize="13sp" android:textStyle="bold"
+                android:textColor="@color/text_primary" android:layout_marginBottom="6dp"/>
+            <EditText android:id="@+id/et_confirm"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:hint="Ulangi password" android:background="@drawable/bg_input"
+                android:textColor="@color/text_primary" android:textColorHint="@color/text_hint"
+                android:textSize="14sp" android:paddingStart="16dp" android:paddingEnd="16dp"
+                android:inputType="textPassword" android:layout_marginBottom="24dp"/>
+
+            <Button android:id="@+id/btn_register"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:text="Buat Akun" android:textColor="@color/text_white"
+                android:textSize="15sp" android:textStyle="bold"
+                android:background="@drawable/bg_btn_primary" android:stateListAnimator="@null"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Sudah punya akun? " android:textSize="13sp"
+                    android:textColor="@color/text_secondary"/>
+                <TextView android:id="@+id/tv_login"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Masuk" android:textSize="13sp" android:textStyle="bold"
+                    android:textColor="@color/primary"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

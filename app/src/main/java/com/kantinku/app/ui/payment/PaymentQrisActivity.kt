@@ -24,7 +24,7 @@ class PaymentQrisActivity : AppCompatActivity() {
         val tvTimer = findViewById<TextView>(R.id.tv_timer)
 
         btnBack.setOnClickListener { v: View? -> finish() }
-        tvTotal.text = CartManager.rupiah(CartManager.getInstance().total)
+        tvTotal.text = CartManager.rupiah(CartManager.instance.total)
 
         // 5 minute countdown
         countDownTimer = object : CountDownTimer(300000, 1000) {

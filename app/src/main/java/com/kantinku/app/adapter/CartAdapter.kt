@@ -28,11 +28,11 @@ class CartAdapter(private var items: List<CartItem>, private val onChange: Runna
         h.price.text = CartManager.rupiah(ci.food.price * ci.qty)
         h.qty.text = ci.qty.toString()
         h.minus.setOnClickListener { v: View? ->
-            CartManager.getInstance().removeOne(ci.food.id)
+            CartManager.instance.removeOne(ci.food.id)
             onChange.run()
         }
         h.plus.setOnClickListener { v: View? ->
-            CartManager.getInstance().addItem(ci.food)
+            CartManager.instance.addItem(ci.food)
             onChange.run()
         }
     }

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg_primary">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:paddingStart="16dp" android:paddingEnd="16dp">
+        <ImageButton android:id="@+id/btn_back" android:layout_width="38dp" android:layout_height="38dp"
+            android:src="@android:drawable/ic_media_previous" android:background="@drawable/bg_chip"
+            android:contentDescription="Back" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="🏦 Transfer Bank" android:textSize="16sp" android:textStyle="bold"
+            android:textColor="@color/white_full" android:gravity="center" />
+        <View android:layout_width="38dp" android:layout_height="38dp" />
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:gravity="center" android:layout_marginBottom="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Transfer tepat sebesar" android:textSize="12sp" android:textStyle="bold"
+                    android:textColor="@color/white_50" />
+                <TextView android:id="@+id/tv_total" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Rp 0" android:textSize="26sp" android:textStyle="bold"
+                    android:textColor="@color/orange_primary" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Kode unik sudah termasuk" android:textSize="10sp" android:textStyle="bold"
+                    android:textColor="@color/white_50" />
+            </LinearLayout>
+
+            <!-- BCA -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/card_primary" app:cardElevation="0dp"
+                app:strokeColor="@color/white_12" app:strokeWidth="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="BCA" android:textSize="11sp" android:textStyle="bold"
+                        android:textColor="@color/white_50" android:background="@color/card_secondary"
+                        android:padding="10dp" android:paddingStart="14dp" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical" android:padding="12dp">
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="1234 5678 90" android:textSize="14sp" android:textStyle="bold"
+                                android:textColor="@color/white_full" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="a.n. KantinKu Utama" android:textSize="10sp" android:textStyle="bold"
+                                android:textColor="@color/white_50" />
+                        </LinearLayout>
+                        <Button android:id="@+id/btn_copy_bca" android:layout_width="wrap_content"
+                            android:layout_height="36dp" android:text="Salin" android:textSize="11sp"
+                            android:textStyle="bold" android:textColor="@color/orange_primary"
+                            android:background="@drawable/bg_tag_orange" android:stateListAnimator="@null"
+                            android:paddingStart="14dp" android:paddingEnd="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Mandiri -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/card_primary" app:cardElevation="0dp"
+                app:strokeColor="@color/white_12" app:strokeWidth="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Mandiri" android:textSize="11sp" android:textStyle="bold"
+                        android:textColor="@color/white_50" android:background="@color/card_secondary"
+                        android:padding="10dp" android:paddingStart="14dp" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical" android:padding="12dp">
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="0987 6543 21" android:textSize="14sp" android:textStyle="bold"
+                                android:textColor="@color/white_full" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="a.n. KantinKu Utama" android:textSize="10sp" android:textStyle="bold"
+                                android:textColor="@color/white_50" />
+                        </LinearLayout>
+                        <Button android:id="@+id/btn_copy_mandiri" android:layout_width="wrap_content"
+                            android:layout_height="36dp" android:text="Salin" android:textSize="11sp"
+                            android:textStyle="bold" android:textColor="@color/orange_primary"
+                            android:background="@drawable/bg_tag_orange" android:stateListAnimator="@null"
+                            android:paddingStart="14dp" android:paddingEnd="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- BNI -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/card_primary" app:cardElevation="0dp"
+                app:strokeColor="@color/white_12" app:strokeWidth="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="BNI" android:textSize="11sp" android:textStyle="bold"
+                        android:textColor="@color/white_50" android:background="@color/card_secondary"
+                        android:padding="10dp" android:paddingStart="14dp" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical" android:padding="12dp">
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="1122 3344 55" android:textSize="14sp" android:textStyle="bold"
+                                android:textColor="@color/white_full" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="a.n. KantinKu Utama" android:textSize="10sp" android:textStyle="bold"
+                                android:textColor="@color/white_50" />
+                        </LinearLayout>
+                        <Button android:id="@+id/btn_copy_bni" android:layout_width="wrap_content"
+                            android:layout_height="36dp" android:text="Salin" android:textSize="11sp"
+                            android:textStyle="bold" android:textColor="@color/orange_primary"
+                            android:background="@drawable/bg_tag_orange" android:stateListAnimator="@null"
+                            android:paddingStart="14dp" android:paddingEnd="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp">
+        <Button android:id="@+id/btn_confirm" android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="Konfirmasi Transfer ✅" android:textColor="@color/white_full" android:textSize="15sp"
+            android:textStyle="bold" android:background="@drawable/bg_button_orange" android:stateListAnimator="@null" />
+    </LinearLayout>
+</LinearLayout>

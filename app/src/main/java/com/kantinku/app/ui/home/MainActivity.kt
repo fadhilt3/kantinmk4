@@ -29,7 +29,11 @@ class MainActivity : AppCompatActivity() {
         lblProfile = findViewById(R.id.lbl_profile)
         cartBadge = findViewById(R.id.cart_badge)
 
-        CartManager.getInstance().setListener { this.updateBadge() }
+        CartManager.instance.setListener(object : CartManager.CartListener {
+            override fun onCartChanged() {
+                updateBadge()
+            }
+        })
 
         goTab(HomeFragment(), 0)
         findViewById<View>(R.id.tab_home).setOnClickListener { v: View? ->
@@ -70,7 +74,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun updateBadge() {
-        val n = CartManager.getInstance().totalQty
+        val n = CartManager.instance.totalQty
         cartBadge!!.text = n.toString()
         cartBadge!!.visibility = if (n > 0) View.VISIBLE else View.GONE
     }

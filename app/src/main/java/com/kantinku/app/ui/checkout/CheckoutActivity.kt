@@ -30,36 +30,20 @@ class CheckoutActivity : AppCompatActivity() {
 
         // Summary
         val sb = StringBuilder()
-        for (ci in CartManager.getInstance().items) sb.append(ci.food.emoji).append(" ")
+        for (ci in CartManager.instance.getItems()) sb.append(ci.food.emoji).append(" ")
             .append(ci.food.name)
             .append(" x").append(ci.qty).append("  ")
             .append(CartManager.rupiah(ci.food.price * ci.qty)).append("\n")
         (findViewById<View>(R.id.tv_order_summary) as TextView).text =
             sb.toString().trim { it <= ' ' }
         (findViewById<View>(R.id.tv_total) as TextView).text =
-            CartManager.rupiah(CartManager.getInstance().total)
+            CartManager.rupiah(CartManager.instance.total)
 
         selectMethod("qris")
-        findViewById<View>(R.id.card_qris).setOnClickListener { v: View? ->
-            selectMethod(
-                "qris"
-            )
-        }
-        findViewById<View>(R.id.card_transfer).setOnClickListener { v: View? ->
-            selectMethod(
-                "transfer"
-            )
-        }
-        findViewById<View>(R.id.card_tunai).setOnClickListener { v: View? ->
-            selectMethod(
-                "tunai"
-            )
-        }
-        findViewById<View>(R.id.card_ewallet).setOnClickListener { v: View? ->
-            selectMethod(
-                "ewallet"
-            )
-        }
+        findViewById<View>(R.id.card_qris).setOnClickListener { v: View? -> selectMethod("qris") }
+        findViewById<View>(R.id.card_transfer).setOnClickListener { v: View? -> selectMethod("transfer") }
+        findViewById<View>(R.id.card_tunai).setOnClickListener { v: View? -> selectMethod("tunai") }
+        findViewById<View>(R.id.card_ewallet).setOnClickListener { v: View? -> selectMethod("ewallet") }
 
         (findViewById<View>(R.id.btn_pay) as Button).setOnClickListener { v: View? ->
             val i = Intent(this, PaymentActivity::class.java)

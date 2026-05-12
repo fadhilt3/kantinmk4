@@ -23,7 +23,7 @@ class NotificationActivity : AppCompatActivity() {
         val rv = findViewById<RecyclerView>(R.id.rv_notif)
         rv.layoutManager = LinearLayoutManager(this)
         rv.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
-        adapter = NotifAdapter(DataProvider.getNotifications())
+        adapter = NotifAdapter(DataProvider.notifications)
         rv.adapter = adapter
 
         (findViewById<View>(R.id.tv_read_all) as TextView).setOnClickListener { v: View? -> adapter!!.markAllRead() }
