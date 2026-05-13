@@ -5,4 +5,5 @@ class Menu {
     val nama_menu: String? = null
     val harga: Int = 0
     val stok: Int = 0
+    val kategori: String? = null
 }

@@ -10,12 +10,20 @@ import com.kantinku.app.model.FoodItem
 import com.kantinku.app.utils.CartManager
 import java.util.Locale
 
-class FoodAdapter(private val allItems: List<FoodItem>, private val listener: OnAddListener) :
+class FoodAdapter(private val allItems: MutableList<FoodItem>, private val listener: OnAddListener) :
     RecyclerView.Adapter<FoodAdapter.VH>() {
     private val filtered: MutableList<FoodItem> = ArrayList(allItems)
 
     interface OnAddListener {
         fun onAdd(item: FoodItem?)
+    }
+
+    fun updateData(newItems: List<FoodItem>) {
+        allItems.clear()
+        allItems.addAll(newItems)
+        filtered.clear()
+        filtered.addAll(newItems)
+        notifyDataSetChanged()
     }
 
     fun filter(query: String?) {
@@ -25,9 +33,7 @@ class FoodAdapter(private val allItems: List<FoodItem>, private val listener: On
         } else {
             val q = query.lowercase(Locale.getDefault())
             for (f in allItems) if (f.name.lowercase(Locale.getDefault())
-                    .contains(q) || f.kantin.lowercase(
-                    Locale.getDefault()
-                ).contains(q)
+                    .contains(q) || f.kantin.lowercase(Locale.getDefault()).contains(q)
             ) filtered.add(f)
         }
         notifyDataSetChanged()

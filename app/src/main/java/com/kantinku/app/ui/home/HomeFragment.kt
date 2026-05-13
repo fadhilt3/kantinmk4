@@ -83,7 +83,7 @@ class HomeFragment : Fragment() {
         val rv = v.findViewById<RecyclerView>(R.id.rv_menu)
         rv.layoutManager = LinearLayoutManager(requireContext())
 
-        val adapter = FoodAdapter(allMenu, object : FoodAdapter.OnAddListener {
+        val adapter = FoodAdapter(allMenu.toMutableList(), object : FoodAdapter.OnAddListener {
             override fun onAdd(food: FoodItem?) {
                 food?.let { addToCart(it) }
             }
