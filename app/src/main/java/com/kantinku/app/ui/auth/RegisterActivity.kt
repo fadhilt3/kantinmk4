@@ -12,6 +12,10 @@ import androidx.appcompat.app.AppCompatActivity
 import com.kantinku.app.R
 import com.kantinku.app.session.SessionManager.Companion.getInstance
 import com.kantinku.app.ui.home.MainActivity
+import com.kantinku.app.api.ApiClient
+import com.kantinku.app.api.ApiService
+import com.kantinku.app.model.LoginResponse
+import com.kantinku.app.model.RegisterRequest
 
 class RegisterActivity : AppCompatActivity() {
     private var etName: EditText? = null
@@ -40,18 +44,13 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun doRegister() {
-        val name = etName!!.text.toString().trim { it <= ' ' }
-        val username = etUsername!!.text.toString().trim { it <= ' ' }
-        val email = etEmail!!.text.toString().trim { it <= ' ' }
+        val name = etName!!.text.toString().trim()
+        val email = etEmail!!.text.toString().trim()
         val password = etPassword!!.text.toString()
         val confirm = etConfirm!!.text.toString()
 
         if (TextUtils.isEmpty(name)) {
             etName!!.error = "Nama wajib diisi"
-            return
-        }
-        if (TextUtils.isEmpty(username)) {
-            etUsername!!.error = "Username wajib diisi"
             return
         }
         if (TextUtils.isEmpty(email)) {
@@ -67,11 +66,45 @@ class RegisterActivity : AppCompatActivity() {
             return
         }
 
-        getInstance(this).saveLogin(name, email, username)
-        Toast.makeText(this, "Akun berhasil dibuat! Selamat datang, $name 🎉", Toast.LENGTH_LONG)
-            .show()
-        val intent = Intent(this, MainActivity::class.java)
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
-        startActivity(intent)
+        val apiService = ApiClient.client.create(ApiService::class.java)
+        val request = RegisterRequest(name, email, password)
+
+        apiService.register(request).enqueue(object : retrofit2.Callback<LoginResponse> {
+            override fun onResponse(
+                call: retrofit2.Call<LoginResponse>,
+                response: retrofit2.Response<LoginResponse>
+            ) {
+                if (response.isSuccessful) {
+                    val body = response.body()!!
+                    getInstance(this@RegisterActivity).saveLogin(
+                        body.user.name,
+                        body.user.email,
+                        body.access_token
+                    )
+                    Toast.makeText(
+                        this@RegisterActivity,
+                        "Akun berhasil dibuat! Selamat datang, ${body.user.name} 🎉",
+                        Toast.LENGTH_LONG
+                    ).show()
+                    val intent = Intent(this@RegisterActivity, MainActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    startActivity(intent)
+                } else {
+                    Toast.makeText(
+                        this@RegisterActivity,
+                        "Gagal register! Email mungkin sudah dipakai.",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
+
+            override fun onFailure(call: retrofit2.Call<LoginResponse>, t: Throwable) {
+                Toast.makeText(
+                    this@RegisterActivity,
+                    "Gagal koneksi: ${t.message}",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        })
     }
 }

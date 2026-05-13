@@ -3,6 +3,7 @@ package com.kantinku.app.api
 import com.kantinku.app.model.LoginRequest
 import com.kantinku.app.model.LoginResponse
 import com.kantinku.app.model.Menu
+import com.kantinku.app.model.RegisterRequest
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -14,4 +15,7 @@ interface ApiService {
 
     @POST("login")
     fun login(@Body request: LoginRequest): Call<LoginResponse>
+
+    @POST("register")
+    fun register(@Body request: RegisterRequest): Call<LoginResponse>
 }
