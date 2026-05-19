@@ -11,6 +11,7 @@ import com.kantinku.app.utils.CartManager.CartItem
 
 class CartAdapter(private var items: List<CartItem>, private val onChange: Runnable) :
     RecyclerView.Adapter<CartAdapter.VH>() {
+
     fun refresh(newItems: List<CartItem>) {
         items = newItems
         notifyDataSetChanged()
@@ -27,19 +28,17 @@ class CartAdapter(private var items: List<CartItem>, private val onChange: Runna
         h.kantin.text = ci.food.kantin
         h.price.text = CartManager.rupiah(ci.food.price * ci.qty)
         h.qty.text = ci.qty.toString()
-        h.minus.setOnClickListener { v: View? ->
+        h.minus.setOnClickListener {
             CartManager.instance.removeOne(ci.food.id)
             onChange.run()
         }
-        h.plus.setOnClickListener { v: View? ->
+        h.plus.setOnClickListener {
             CartManager.instance.addItem(ci.food)
             onChange.run()
         }
     }
 
-    override fun getItemCount(): Int {
-        return items.size
-    }
+    override fun getItemCount(): Int = items.size
 
     class VH(v: View) : RecyclerView.ViewHolder(v) {
         var emoji: TextView = v.findViewById(R.id.tv_emoji)

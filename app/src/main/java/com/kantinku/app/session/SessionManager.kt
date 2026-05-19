@@ -18,7 +18,6 @@ class SessionManager private constructor(context: Context) {
         editor.putString(KEY_NAME, name)
         editor.putString(KEY_EMAIL, email)
         editor.putString(KEY_USERNAME, username)
-        // Generate initials for avatar
         val parts = name.trim { it <= ' ' }.split(" ".toRegex()).dropLastWhile { it.isEmpty() }
             .toTypedArray()
         val initials = if (parts.size >= 2)
@@ -28,16 +27,22 @@ class SessionManager private constructor(context: Context) {
         editor.apply()
     }
 
+    fun saveToken(token: String) {
+        editor.putString(KEY_TOKEN, token)
+        editor.apply()
+    }
+
+    fun fetchAuthToken(): String? {
+        return prefs.getString(KEY_TOKEN, null)
+    }
+
     fun logout() {
         editor.clear()
         editor.apply()
     }
 
     val isLoggedIn: Boolean
-        get() = prefs.getBoolean(
-            KEY_LOGGED,
-            false
-        )
+        get() = prefs.getBoolean(KEY_LOGGED, false)
     val userName: String
         get() = prefs.getString(KEY_NAME, "")!!
     val userEmail: String
@@ -48,7 +53,6 @@ class SessionManager private constructor(context: Context) {
         get() = prefs.getString(KEY_AVATAR, "?")!!
 
     val firstName: String
-        /** First name only for greeting  */
         get() {
             val name = userName
             if (name.isEmpty()) return "Kamu"
@@ -61,10 +65,11 @@ class SessionManager private constructor(context: Context) {
         private const val KEY_NAME = "userName"
         private const val KEY_EMAIL = "userEmail"
         private const val KEY_USERNAME = "userUsername"
-        private const val KEY_PHONE = "userPhone"
         private const val KEY_AVATAR = "userAvatar"
+        private const val KEY_TOKEN = "authToken"
 
         private var instance: SessionManager? = null
+
         @JvmStatic
         fun getInstance(context: Context): SessionManager {
             if (instance == null) instance = SessionManager(context)

@@ -4,11 +4,13 @@ package com.kantinku.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.kantinku.app.R;
@@ -24,21 +26,22 @@ public final class ActivityHistoryBinding implements ViewBinding {
   public final ImageButton btnBack;
 
   @NonNull
-  public final Button btnReorder1;
+  public final ProgressBar progressBar;
 
   @NonNull
-  public final Button btnReorder2;
+  public final RecyclerView rvHistory;
 
   @NonNull
-  public final Button btnTrack;
+  public final TextView tvEmpty;
 
   private ActivityHistoryBinding(@NonNull LinearLayout rootView, @NonNull ImageButton btnBack,
-      @NonNull Button btnReorder1, @NonNull Button btnReorder2, @NonNull Button btnTrack) {
+      @NonNull ProgressBar progressBar, @NonNull RecyclerView rvHistory,
+      @NonNull TextView tvEmpty) {
     this.rootView = rootView;
     this.btnBack = btnBack;
-    this.btnReorder1 = btnReorder1;
-    this.btnReorder2 = btnReorder2;
-    this.btnTrack = btnTrack;
+    this.progressBar = progressBar;
+    this.rvHistory = rvHistory;
+    this.tvEmpty = tvEmpty;
   }
 
   @Override
@@ -74,26 +77,26 @@ public final class ActivityHistoryBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btn_reorder1;
-      Button btnReorder1 = ViewBindings.findChildViewById(rootView, id);
-      if (btnReorder1 == null) {
+      id = R.id.progress_bar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
         break missingId;
       }
 
-      id = R.id.btn_reorder2;
-      Button btnReorder2 = ViewBindings.findChildViewById(rootView, id);
-      if (btnReorder2 == null) {
+      id = R.id.rv_history;
+      RecyclerView rvHistory = ViewBindings.findChildViewById(rootView, id);
+      if (rvHistory == null) {
         break missingId;
       }
 
-      id = R.id.btn_track;
-      Button btnTrack = ViewBindings.findChildViewById(rootView, id);
-      if (btnTrack == null) {
+      id = R.id.tv_empty;
+      TextView tvEmpty = ViewBindings.findChildViewById(rootView, id);
+      if (tvEmpty == null) {
         break missingId;
       }
 
-      return new ActivityHistoryBinding((LinearLayout) rootView, btnBack, btnReorder1, btnReorder2,
-          btnTrack);
+      return new ActivityHistoryBinding((LinearLayout) rootView, btnBack, progressBar, rvHistory,
+          tvEmpty);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

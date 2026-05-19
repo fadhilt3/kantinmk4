@@ -1,6 +1,7 @@
 package com.kantinku.app.utils
 
 import com.kantinku.app.model.FoodItem
+import com.kantinku.app.model.OrderItemRequest
 
 class CartManager private constructor() {
 
@@ -32,13 +33,8 @@ class CartManager private constructor() {
 
     fun removeOne(id: String) {
         val ci = items[id] ?: return
-
-        if (ci.qty > 1) {
-            ci.qty--
-        } else {
-            items.remove(id)
-        }
-
+        if (ci.qty > 1) ci.qty--
+        else items.remove(id)
         notifyCart()
     }
 
@@ -52,43 +48,32 @@ class CartManager private constructor() {
         notifyCart()
     }
 
-    fun getItems(): List<CartItem> {
-        return ArrayList(items.values)
+    fun getItems(): List<CartItem> = ArrayList(items.values)
+
+    val isEmpty: Boolean get() = items.isEmpty()
+
+    val totalQty: Int get() = items.values.sumOf { it.qty }
+
+    val subtotal: Int get() = items.values.sumOf { it.food.price * it.qty }
+
+    val total: Int get() = subtotal + serviceFee
+
+    // Convert keranjang ke format yang dikirim ke Laravel
+    fun toOrderItems(): List<OrderItemRequest> {
+        return items.values.map {
+            OrderItemRequest(
+                menu_id = it.food.id.toInt(),
+                jumlah = it.qty
+            )
+        }
     }
 
-    val isEmpty: Boolean
-        get() = items.isEmpty()
-
-    val totalQty: Int
-        get() {
-            var total = 0
-            for (c in items.values) {
-                total += c.qty
-            }
-            return total
-        }
-
-    val subtotal: Int
-        get() {
-            var total = 0
-            for (c in items.values) {
-                total += c.food.price * c.qty
-            }
-            return total
-        }
-
-    val total: Int
-        get() = subtotal + serviceFee
-
     companion object {
-
         private var INSTANCE: CartManager? = null
 
         val instance: CartManager
             get() {
-                if (INSTANCE == null) {
-                    INSTANCE = CartManager()
-                }
+                if (INSTANCE == null) INSTANCE = CartManager()
                 return INSTANCE!!
             }
 
@@ -98,15 +83,11 @@ class CartManager private constructor() {
             val s = amount.toString()
             val r = StringBuilder()
             var cnt = 0
-
             for (i in s.length - 1 downTo 0) {
-                if (cnt > 0 && cnt % 3 == 0) {
-                    r.insert(0, ".")
-                }
+                if (cnt > 0 && cnt % 3 == 0) r.insert(0, ".")
                 r.insert(0, s[i])
                 cnt++
             }
-
             return "Rp $r"
         }
     }

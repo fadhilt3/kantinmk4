@@ -67,11 +67,15 @@ class LoginActivity : AppCompatActivity() {
             ) {
                 if (response.isSuccessful) {
                     val body = response.body()!!
-                    getInstance(this@LoginActivity).saveLogin(
+                    val session = getInstance(this@LoginActivity)
+                    session.saveLogin(
                         body.user.name,
                         body.user.email,
-                        body.access_token
+                        body.user.name
                     )
+                    // Simpan token dengan benar
+                    session.saveToken(body.access_token)
+
                     Toast.makeText(
                         this@LoginActivity,
                         "Selamat datang, ${body.user.name}! 👋",

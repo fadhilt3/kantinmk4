@@ -18,6 +18,7 @@ import com.kantinku.app.R
 import com.kantinku.app.adapter.FoodAdapter
 import com.kantinku.app.api.ApiClient
 import com.kantinku.app.api.ApiService
+import com.kantinku.app.model.Category
 import com.kantinku.app.model.FoodItem
 import com.kantinku.app.model.Menu
 import com.kantinku.app.model.toFoodItem
@@ -53,7 +54,6 @@ class MenuFragment : Fragment() {
         })
         rv.adapter = adapter
 
-        // Search
         val etSearch = v.findViewById<EditText>(R.id.et_search)
         etSearch.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, a: Int, b: Int, c: Int) {}
@@ -63,11 +63,104 @@ class MenuFragment : Fragment() {
             override fun afterTextChanged(s: Editable?) {}
         })
 
-        // Setup category chips
-        setupCategoryChips(v)
-
-        // Load menu dari API
+        loadCategoriesFromApi(v)
         loadMenuFromApi()
+    }
+
+    private fun loadCategoriesFromApi(v: View) {
+        val apiService = ApiClient.client.create(ApiService::class.java)
+        apiService.getCategories().enqueue(object : Callback<List<Category>> {
+            override fun onResponse(call: Call<List<Category>>, response: Response<List<Category>>) {
+                if (response.isSuccessful && !response.body().isNullOrEmpty()) {
+                    val categories = response.body()!!
+                    setupCategoryChipsFromApi(v, categories)
+                } else {
+                    setupCategoryChipsFallback(v)
+                }
+            }
+
+            override fun onFailure(call: Call<List<Category>>, t: Throwable) {
+                setupCategoryChipsFallback(v)
+            }
+        })
+    }
+
+    private fun setupCategoryChipsFromApi(v: View, categories: List<Category>) {
+        val catContainer = v.findViewById<LinearLayout>(R.id.category_filter)
+        catContainer.removeAllViews()
+
+        // Tambah chip "Semua" di awal
+        val allCategories = mutableListOf<Pair<String, String>>()
+        allCategories.add(Pair("semua", "Semua"))
+        categories.forEach { allCategories.add(Pair(it.name.lowercase(), it.name)) }
+
+        for (i in allCategories.indices) {
+            val (cat, label) = allCategories[i]
+            val chip = makeChip(label, i == 0)
+
+            chip.setOnClickListener {
+                activeChip?.let {
+                    it.setBackgroundResource(R.drawable.bg_chip_default)
+                    it.setTextColor(requireContext().getColor(R.color.text_secondary))
+                }
+                chip.setBackgroundResource(R.drawable.bg_chip_active)
+                chip.setTextColor(requireContext().getColor(R.color.text_white))
+                activeChip = chip
+                adapter?.filterByCategory(cat)
+            }
+            catContainer.addView(chip)
+        }
+    }
+
+    private fun setupCategoryChipsFallback(v: View) {
+        val catContainer = v.findViewById<LinearLayout>(R.id.category_filter)
+        catContainer.removeAllViews()
+
+        val cats = DataProvider.categories
+        val labels = arrayOf("Semua", "Nasi", "Mie", "Kuah", "Lauk", "Sayur", "Minuman", "Snack")
+
+        for (i in cats.indices) {
+            val cat = cats[i]
+            val chip = makeChip(labels[i], i == 0)
+
+            chip.setOnClickListener {
+                activeChip?.let {
+                    it.setBackgroundResource(R.drawable.bg_chip_default)
+                    it.setTextColor(requireContext().getColor(R.color.text_secondary))
+                }
+                chip.setBackgroundResource(R.drawable.bg_chip_active)
+                chip.setTextColor(requireContext().getColor(R.color.text_white))
+                activeChip = chip
+                adapter?.filterByCategory(cat)
+            }
+            catContainer.addView(chip)
+        }
+    }
+
+    private fun makeChip(label: String, isActive: Boolean): TextView {
+        val chip = TextView(requireContext())
+        chip.text = label
+        chip.textSize = 12f
+        chip.setPadding(40, 0, 40, 0)
+        chip.height = 88
+        chip.gravity = Gravity.CENTER
+
+        if (isActive) {
+            chip.setBackgroundResource(R.drawable.bg_chip_active)
+            chip.setTextColor(requireContext().getColor(R.color.text_white))
+            activeChip = chip
+        } else {
+            chip.setBackgroundResource(R.drawable.bg_chip_default)
+            chip.setTextColor(requireContext().getColor(R.color.text_secondary))
+        }
+
+        val lp = LinearLayout.LayoutParams(
+            LinearLayout.LayoutParams.WRAP_CONTENT,
+            LinearLayout.LayoutParams.WRAP_CONTENT
+        )
+        lp.marginEnd = 16
+        chip.layoutParams = lp
+        return chip
     }
 
     private fun loadMenuFromApi() {
@@ -92,50 +185,6 @@ class MenuFragment : Fragment() {
 
     private fun loadDummyData() {
         adapter?.updateData(DataProvider.allMenu)
-    }
-
-    private fun setupCategoryChips(v: View) {
-        val catContainer = v.findViewById<LinearLayout>(R.id.category_filter)
-        val cats = DataProvider.categories
-        val labels = arrayOf("Semua", "Nasi", "Mie", "Kuah", "Lauk", "Sayur", "Minuman", "Snack")
-
-        for (i in cats.indices) {
-            val cat = cats[i]
-            val chip = TextView(requireContext())
-            chip.text = labels[i]
-            chip.textSize = 12f
-            chip.setPadding(40, 0, 40, 0)
-            chip.height = 88
-            chip.gravity = Gravity.CENTER
-
-            if (i == 0) {
-                chip.setBackgroundResource(R.drawable.bg_chip_active)
-                chip.setTextColor(requireContext().getColor(R.color.text_white))
-                activeChip = chip
-            } else {
-                chip.setBackgroundResource(R.drawable.bg_chip_default)
-                chip.setTextColor(requireContext().getColor(R.color.text_secondary))
-            }
-
-            val lp = LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.WRAP_CONTENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT
-            )
-            lp.marginEnd = 16
-            chip.layoutParams = lp
-
-            chip.setOnClickListener {
-                activeChip?.let {
-                    it.setBackgroundResource(R.drawable.bg_chip_default)
-                    it.setTextColor(requireContext().getColor(R.color.text_secondary))
-                }
-                chip.setBackgroundResource(R.drawable.bg_chip_active)
-                chip.setTextColor(requireContext().getColor(R.color.text_white))
-                activeChip = chip
-                adapter?.filterByCategory(cat)
-            }
-            catContainer.addView(chip)
-        }
     }
 
     private fun addToCart(food: FoodItem) {
