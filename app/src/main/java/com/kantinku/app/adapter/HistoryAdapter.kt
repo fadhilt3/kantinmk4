@@ -28,7 +28,6 @@ class HistoryAdapter(private var orders: List<OrderData>) :
         h.tvOrderId.text = "#KTN-${order.id}"
         h.tvOrderDate.text = order.created_at?.take(10) ?: "-"
 
-        // Status
         when (order.status) {
             "paid" -> {
                 h.tvStatus.text = "Selesai"
@@ -45,12 +44,13 @@ class HistoryAdapter(private var orders: List<OrderData>) :
             }
         }
 
-        // Items
-        val itemsText = order.items.joinToString("  •  ") { item ->
-            val emoji = getEmojiByKategori(item.menu.kategori)
-            "$emoji ${item.menu.nama_menu} x${item.jumlah}"
-        }
-        h.tvItems.text = itemsText
+        val itemsText = order.items
+            .filter { it.menu != null }
+            .joinToString("  •  ") { item ->
+                val emoji = getEmojiByKategori(item.menu.kategori)
+                "$emoji ${item.menu.nama_menu} x${item.jumlah}"
+            }
+        h.tvItems.text = if (itemsText.isEmpty()) "Detail tidak tersedia" else itemsText
         h.tvTotal.text = CartManager.rupiah(order.total_harga.toInt())
     }
 

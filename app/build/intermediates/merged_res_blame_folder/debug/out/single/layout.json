@@ -36,6 +36,10 @@
         "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_splash.xml"
     },
     {
+        "merged": "com.kantinku.app-mergeDebugResources-33:/layout/fragment_profile.xml",
+        "source": "com.kantinku.app-main-36:/layout/fragment_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-mergeDebugResources-33:\\layout\\item_cart.xml",
         "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\item_cart.xml"
     },
@@ -50,10 +54,6 @@
     {
         "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-mergeDebugResources-33:\\layout\\activity_payment.xml",
         "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_payment.xml"
-    },
-    {
-        "merged": "com.kantinku.app-mergeDebugResources-33:/layout/item_food_popular.xml",
-        "source": "com.kantinku.app-main-36:/layout/item_food_popular.xml"
     },
     {
         "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-mergeDebugResources-33:\\layout\\activity_history.xml",

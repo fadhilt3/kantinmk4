@@ -35,12 +35,6 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final LinearLayout rowLogout;
 
   @NonNull
-  public final LinearLayout rowNotif;
-
-  @NonNull
-  public final LinearLayout rowSettings;
-
-  @NonNull
   public final TextView tvAvatar;
 
   @NonNull
@@ -54,8 +48,7 @@ public final class FragmentProfileBinding implements ViewBinding {
 
   private FragmentProfileBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout avatarView,
       @NonNull LinearLayout rowAbout, @NonNull LinearLayout rowFavorites,
-      @NonNull LinearLayout rowHistory, @NonNull LinearLayout rowLogout,
-      @NonNull LinearLayout rowNotif, @NonNull LinearLayout rowSettings, @NonNull TextView tvAvatar,
+      @NonNull LinearLayout rowHistory, @NonNull LinearLayout rowLogout, @NonNull TextView tvAvatar,
       @NonNull TextView tvEmail, @NonNull TextView tvName, @NonNull TextView tvUsernameBadge) {
     this.rootView = rootView;
     this.avatarView = avatarView;
@@ -63,8 +56,6 @@ public final class FragmentProfileBinding implements ViewBinding {
     this.rowFavorites = rowFavorites;
     this.rowHistory = rowHistory;
     this.rowLogout = rowLogout;
-    this.rowNotif = rowNotif;
-    this.rowSettings = rowSettings;
     this.tvAvatar = tvAvatar;
     this.tvEmail = tvEmail;
     this.tvName = tvName;
@@ -128,18 +119,6 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.row_notif;
-      LinearLayout rowNotif = ViewBindings.findChildViewById(rootView, id);
-      if (rowNotif == null) {
-        break missingId;
-      }
-
-      id = R.id.row_settings;
-      LinearLayout rowSettings = ViewBindings.findChildViewById(rootView, id);
-      if (rowSettings == null) {
-        break missingId;
-      }
-
       id = R.id.tv_avatar;
       TextView tvAvatar = ViewBindings.findChildViewById(rootView, id);
       if (tvAvatar == null) {
@@ -165,7 +144,7 @@ public final class FragmentProfileBinding implements ViewBinding {
       }
 
       return new FragmentProfileBinding((LinearLayout) rootView, avatarView, rowAbout, rowFavorites,
-          rowHistory, rowLogout, rowNotif, rowSettings, tvAvatar, tvEmail, tvName, tvUsernameBadge);
+          rowHistory, rowLogout, tvAvatar, tvEmail, tvName, tvUsernameBadge);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,5 +1,6 @@
 package com.kantinku.app.adapter
 
+import android.app.AlertDialog
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,10 +29,24 @@ class CartAdapter(private var items: List<CartItem>, private val onChange: Runna
         h.kantin.text = ci.food.kantin
         h.price.text = CartManager.rupiah(ci.food.price * ci.qty)
         h.qty.text = ci.qty.toString()
+
         h.minus.setOnClickListener {
-            CartManager.instance.removeOne(ci.food.id)
-            onChange.run()
+            if (ci.qty == 1) {
+                AlertDialog.Builder(h.itemView.context)
+                    .setTitle("Hapus item?")
+                    .setMessage("${ci.food.name} akan dihapus dari keranjang.")
+                    .setPositiveButton("Hapus") { _, _ ->
+                        CartManager.instance.removeOne(ci.food.id)
+                        onChange.run()
+                    }
+                    .setNegativeButton("Batal", null)
+                    .show()
+            } else {
+                CartManager.instance.removeOne(ci.food.id)
+                onChange.run()
+            }
         }
+
         h.plus.setOnClickListener {
             CartManager.instance.addItem(ci.food)
             onChange.run()

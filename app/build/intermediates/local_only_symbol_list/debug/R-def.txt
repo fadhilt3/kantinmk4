@@ -141,8 +141,6 @@ id row_about
 id row_favorites
 id row_history
 id row_logout
-id row_notif
-id row_settings
 id rv_cart
 id rv_history
 id rv_menu
