@@ -1,250 +1,250 @@
 [
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_activity_notification.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\activity_notification.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_onboarding.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_onboarding.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_promo.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_promo.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_avatar.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_avatar.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_badge.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_badge.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_activity_payment_ewallet.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\activity_payment_ewallet.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_item_notification.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\item_notification.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_tag_red.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_tag_red.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_tag_orange.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_tag_orange.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\font_nunito.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\font\\nunito.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_activity_payment_qris.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\activity_payment_qris.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_chip_active.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_chip_active.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\activity_register.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_payment_ewallet.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_payment_ewallet.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_button_orange.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_button_orange.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_promo.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_promo.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_input.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_input.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\mipmap-hdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\mipmap-hdpi\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_fragment_menu.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\fragment_menu.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_tag_blue.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_tag_blue.xml"
     },
     {
-        "merged": "com.kantinku.app-merged_res-33:/layout_item_history.xml.flat",
-        "source": "com.kantinku.app-main-35:/layout/item_history.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_btn_primary.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_btn_primary.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_activity_payment_transfer.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\activity_payment_transfer.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_fragment_cart.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\fragment_cart.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_item_notification.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\item_notification.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\mipmap-xxxhdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\mipmap-xxxhdpi\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_bottom_nav.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_bottom_nav.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_item_cart.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\item_cart.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_activity_payment.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\activity_payment.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_input_focused.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_input_focused.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_item_food.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\item_food.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_button_orange.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_button_orange.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_btn_outline.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_btn_outline.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_qty_button.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_qty_button.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_activity_splash.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\activity_splash.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_button_outline.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_button_outline.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\mipmap-xxhdpi\\ic_launcher.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_input.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_input.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\mipmap-xxhdpi\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_qty.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_qty.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_btn_accent.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_btn_accent.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_welcome.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_welcome.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_card.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_card.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_tag_green.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_tag_green.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_fragment_cart.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\fragment_cart.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\mipmap-xxhdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\mipmap-xxhdpi\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_fragment_profile.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\fragment_profile.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\mipmap-mdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\mipmap-mdpi\\ic_launcher.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_payment_transfer.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_payment_transfer.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_activity_history.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\activity_history.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_item_food_card.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\item_food_card.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_tag_blue.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_tag_blue.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_payment_success.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_payment_success.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_item_food_card.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\item_food_card.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_history.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_history.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_search.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_search.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_chip_default.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_chip_default.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_btn_accent.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_btn_accent.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_activity_onboarding.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\activity_onboarding.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_payment.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_payment.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_primary_gradient.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_primary_gradient.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\mipmap-hdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\mipmap-hdpi\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.kantinku.app-merged_res-33:/layout_activity_history.xml.flat",
-        "source": "com.kantinku.app-main-35:/layout/activity_history.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_btn_outline.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_btn_outline.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_item_cart.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\item_cart.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_item_history.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\item_history.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_notif_dot.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_notif_dot.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_register.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\mipmap-xhdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\mipmap-xhdpi\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_qty_button.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_qty_button.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_item_food_popular.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\item_food_popular.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_activity_welcome.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\activity_welcome.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_bottom_nav.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_bottom_nav.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_activity_checkout.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\activity_checkout.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\mipmap-mdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\mipmap-mdpi\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\mipmap-xxxhdpi\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_notif_dot.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_notif_dot.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\mipmap-hdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\mipmap-hdpi\\ic_launcher.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_chip.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_chip.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_tag_yellow.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_tag_yellow.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_tag_red.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_tag_red.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\mipmap-xxxhdpi\\ic_launcher.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_card.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_card.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\mipmap-mdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\mipmap-mdpi\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_checkout.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_checkout.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\font_nunito.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\font\\nunito.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_notification.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_notification.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_qty.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_qty.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_primary_gradient.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_primary_gradient.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_button_outline.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_button_outline.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\mipmap-mdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\mipmap-mdpi\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_input_focused.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_input_focused.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_chip_default.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_chip_default.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_chip_active.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_chip_active.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_fragment_menu.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\fragment_menu.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_chip.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_chip.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_payment_qris.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_payment_qris.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\mipmap-xxhdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\mipmap-xxhdpi\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_badge.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_badge.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_avatar.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_avatar.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\mipmap-xhdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\mipmap-xhdpi\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_tag_yellow.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_tag_yellow.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_search.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_search.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\mipmap-xxxhdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\mipmap-xxxhdpi\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\mipmap-xhdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\mipmap-xhdpi\\ic_launcher.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_tag_orange.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_tag_orange.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_item_food_popular.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\item_food_popular.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_item_food.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\item_food.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_btn_primary.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_btn_primary.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\mipmap-xhdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\mipmap-xhdpi\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_activity_payment_tunai.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\activity_payment_tunai.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_payment_tunai.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_payment_tunai.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\layout_activity_payment_success.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\layout\\activity_payment_success.xml"
+        "merged": "com.kantinku.app-merged_res-34:/layout_item_food_popular.xml.flat",
+        "source": "com.kantinku.app-main-36:/layout/item_food_popular.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-33:\\drawable_bg_tag_green.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-35:\\drawable\\bg_tag_green.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\mipmap-hdpi\\ic_launcher.xml"
     }
 ]

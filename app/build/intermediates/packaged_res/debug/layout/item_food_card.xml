@@ -9,14 +9,30 @@
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
         android:orientation="horizontal" android:gravity="center_vertical" android:padding="14dp">
 
-        <!-- Emoji Box -->
-        <LinearLayout android:layout_width="62dp" android:layout_height="62dp"
-            android:gravity="center" android:background="@drawable/bg_input"
+        <!-- Foto / Emoji Box -->
+        <FrameLayout android:layout_width="62dp" android:layout_height="62dp"
             android:layout_marginEnd="14dp">
-            <TextView android:id="@+id/tv_emoji"
-                android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:text="🍳" android:textSize="28sp"/>
-        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_food"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_input"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/layout_emoji"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:gravity="center"
+                android:background="@drawable/bg_input">
+                <TextView android:id="@+id/tv_emoji"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🍳" android:textSize="28sp"/>
+            </LinearLayout>
+
+        </FrameLayout>
 
         <!-- Info -->
         <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
@@ -44,7 +60,6 @@
                 android:text="Kantin Utama" android:textSize="11sp"
                 android:textColor="@color/text_secondary" android:layout_marginBottom="5dp"/>
 
-            <!-- Rating -->
             <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
                 android:orientation="horizontal" android:gravity="center_vertical"
                 android:layout_marginBottom="6dp">

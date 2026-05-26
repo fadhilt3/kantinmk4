@@ -5,5 +5,6 @@ data class Menu(
     val nama_menu: String = "",
     val harga: Int = 0,
     val stok: Int = 0,
-    val kategori: String = ""
+    val kategori: String = "",
+    val foto: String? = null
 )

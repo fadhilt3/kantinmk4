@@ -12,7 +12,8 @@ fun Menu.toFoodItem(): FoodItem {
         reviewCount = 0,
         category = this.kategori?.lowercase() ?: "semua",
         isPopular = false,
-        isNew = false
+        isNew = false,
+        foto = this.foto
     )
 }
 

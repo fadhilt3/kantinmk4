@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.kantinku.app-mergeDebugResources-31:/values-bn/values-bn.xml",
+            "outputFile": "com.kantinku.app-mergeDebugResources-32:/values-bn/values-bn.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ASUS ROG G513\\.gradle\\caches\\9.0-milestone-1\\transforms\\50a6236c5dc0d621f62c10c446b4fe4a\\transformed\\core-1.13.1\\res\\values-bn\\values-bn.xml",

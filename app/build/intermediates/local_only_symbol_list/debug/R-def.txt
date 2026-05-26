@@ -119,7 +119,9 @@ id ico_home
 id ico_menu
 id ico_profile
 id icon_container
+id img_food
 id layout_buttons
+id layout_emoji
 id lbl_cart
 id lbl_home
 id lbl_menu

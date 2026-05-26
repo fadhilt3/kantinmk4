@@ -42,7 +42,7 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
-
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
     // Versi diturunkan ke 1.13.1 agar cocok dengan SDK 34 kamu
     implementation 'androidx.core:core-ktx:1.13.1'
 

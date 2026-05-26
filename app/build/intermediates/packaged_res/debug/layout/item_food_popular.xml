@@ -9,12 +9,24 @@
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout android:layout_width="match_parent" android:layout_height="100dp"
-            android:gravity="center" android:background="@color/primary_light">
-            <TextView android:id="@+id/tv_emoji"
-                android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:text="🍛" android:textSize="44sp"/>
-        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="100dp">
+
+            <LinearLayout
+                android:id="@+id/layout_emoji"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:gravity="center" android:background="@color/primary_light">
+                <TextView android:id="@+id/tv_emoji"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🍛" android:textSize="44sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_food"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:visibility="gone"/>
+
+        </FrameLayout>
 
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
             android:orientation="vertical" android:padding="10dp">

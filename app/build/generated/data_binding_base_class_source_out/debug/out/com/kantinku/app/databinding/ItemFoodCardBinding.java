@@ -4,6 +4,8 @@ package com.kantinku.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,6 +23,12 @@ public final class ItemFoodCardBinding implements ViewBinding {
 
   @NonNull
   public final TextView btnAdd;
+
+  @NonNull
+  public final ImageView imgFood;
+
+  @NonNull
+  public final LinearLayout layoutEmoji;
 
   @NonNull
   public final TextView tvBadge;
@@ -44,11 +52,13 @@ public final class ItemFoodCardBinding implements ViewBinding {
   public final TextView tvReview;
 
   private ItemFoodCardBinding(@NonNull CardView rootView, @NonNull TextView btnAdd,
-      @NonNull TextView tvBadge, @NonNull TextView tvEmoji, @NonNull TextView tvKantin,
-      @NonNull TextView tvName, @NonNull TextView tvPrice, @NonNull TextView tvRating,
-      @NonNull TextView tvReview) {
+      @NonNull ImageView imgFood, @NonNull LinearLayout layoutEmoji, @NonNull TextView tvBadge,
+      @NonNull TextView tvEmoji, @NonNull TextView tvKantin, @NonNull TextView tvName,
+      @NonNull TextView tvPrice, @NonNull TextView tvRating, @NonNull TextView tvReview) {
     this.rootView = rootView;
     this.btnAdd = btnAdd;
+    this.imgFood = imgFood;
+    this.layoutEmoji = layoutEmoji;
     this.tvBadge = tvBadge;
     this.tvEmoji = tvEmoji;
     this.tvKantin = tvKantin;
@@ -88,6 +98,18 @@ public final class ItemFoodCardBinding implements ViewBinding {
       id = R.id.btn_add;
       TextView btnAdd = ViewBindings.findChildViewById(rootView, id);
       if (btnAdd == null) {
+        break missingId;
+      }
+
+      id = R.id.img_food;
+      ImageView imgFood = ViewBindings.findChildViewById(rootView, id);
+      if (imgFood == null) {
+        break missingId;
+      }
+
+      id = R.id.layout_emoji;
+      LinearLayout layoutEmoji = ViewBindings.findChildViewById(rootView, id);
+      if (layoutEmoji == null) {
         break missingId;
       }
 
@@ -133,8 +155,8 @@ public final class ItemFoodCardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemFoodCardBinding((CardView) rootView, btnAdd, tvBadge, tvEmoji, tvKantin,
-          tvName, tvPrice, tvRating, tvReview);
+      return new ItemFoodCardBinding((CardView) rootView, btnAdd, imgFood, layoutEmoji, tvBadge,
+          tvEmoji, tvKantin, tvName, tvPrice, tvRating, tvReview);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
