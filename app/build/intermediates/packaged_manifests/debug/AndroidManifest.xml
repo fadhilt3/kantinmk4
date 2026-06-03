@@ -68,6 +68,8 @@
             android:name="com.kantinku.app.ui.history.HistoryActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
+        <activity android:name="com.kantinku.app.ui.favorite.FavoriteActivity" />
+        <activity android:name="com.kantinku.app.ui.about.AboutActivity" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

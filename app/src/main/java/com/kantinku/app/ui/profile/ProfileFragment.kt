@@ -13,6 +13,8 @@ import com.kantinku.app.session.SessionManager.Companion.getInstance
 import com.kantinku.app.ui.auth.LoginActivity
 import com.kantinku.app.ui.history.HistoryActivity
 import com.kantinku.app.utils.CartManager
+import com.kantinku.app.ui.favorite.FavoriteActivity
+import com.kantinku.app.ui.about.AboutActivity
 
 class ProfileFragment : Fragment() {
     override fun onCreateView(inf: LayoutInflater, c: ViewGroup?, s: Bundle?): View? {
@@ -32,10 +34,10 @@ class ProfileFragment : Fragment() {
             startActivity(Intent(requireContext(), HistoryActivity::class.java))
         }
         v.findViewById<View>(R.id.row_favorites).setOnClickListener {
-            Toast.makeText(requireContext(), "Fitur favorit segera hadir! ❤️", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(requireContext(), FavoriteActivity::class.java))
         }
         v.findViewById<View>(R.id.row_about).setOnClickListener {
-            Toast.makeText(requireContext(), "KantinKu v2.0 - Modern Canteen App 🍽️", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(requireContext(), AboutActivity::class.java))
         }
         v.findViewById<View>(R.id.row_logout).setOnClickListener {
             CartManager.instance.clearCart()

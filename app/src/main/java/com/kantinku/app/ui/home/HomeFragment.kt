@@ -31,7 +31,7 @@ import com.kantinku.app.utils.DataProvider
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-
+import com.kantinku.app.ui.favorite.FavoriteActivity
 class HomeFragment : Fragment() {
 
     private var adapter: FoodAdapter? = null
@@ -53,9 +53,9 @@ class HomeFragment : Fragment() {
         v.findViewById<TextView>(R.id.tv_username).text = "Mau makan apa hari ini?"
         v.findViewById<TextView>(R.id.tv_avatar).text = sm.avatar
 
-        // Notifikasi
-        v.findViewById<View>(R.id.btn_notif).setOnClickListener {
-            startActivity(Intent(requireContext(), NotificationActivity::class.java))
+        // Favorite
+        v.findViewById<View>(R.id.btn_favorite).setOnClickListener {
+            startActivity(Intent(requireContext(), FavoriteActivity::class.java))
         }
 
         // RecyclerView menu

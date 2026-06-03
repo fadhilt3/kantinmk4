@@ -12,7 +12,8 @@ class FoodItem(
     val category: String,
     @JvmField val isPopular: Boolean,
     val isNew: Boolean,
-    val foto: String? = null
+    val foto: String? = null,
+    var isFavorite: Boolean = false
 ) {
     val isAvailable: Boolean = true
 }

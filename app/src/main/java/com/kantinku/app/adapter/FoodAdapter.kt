@@ -1,16 +1,25 @@
 package com.kantinku.app.adapter
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.kantinku.app.R
+import com.kantinku.app.api.ApiClient
+import com.kantinku.app.api.ApiService
+import com.kantinku.app.model.FavoriteResponse
 import com.kantinku.app.model.FoodItem
+import com.kantinku.app.session.SessionManager
 import com.kantinku.app.utils.CartManager
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import java.util.Locale
 
 class FoodAdapter(private val allItems: MutableList<FoodItem>, private val listener: OnAddListener) :
@@ -66,7 +75,7 @@ class FoodAdapter(private val allItems: MutableList<FoodItem>, private val liste
         h.rating.text = String.format("%.1f", f.rating)
         h.review.text = "(" + f.reviewCount + ")"
 
-        // Load foto dari URL atau tampilkan emoji
+        // Load foto atau emoji
         if (!f.foto.isNullOrEmpty()) {
             h.imgFood.visibility = View.VISIBLE
             h.layoutEmoji.visibility = View.GONE
@@ -90,6 +99,36 @@ class FoodAdapter(private val allItems: MutableList<FoodItem>, private val liste
             h.badge.text = "🆕 Baru"
         } else h.badge.visibility = View.GONE
 
+        // Set icon favorit
+        h.btnFavorite.setImageResource(
+            if (f.isFavorite) R.drawable.ic_favorite else R.drawable.ic_favorite_border
+        )
+
+        // Toggle favorit
+        h.btnFavorite.setOnClickListener {
+            val context = h.itemView.context
+            val token = SessionManager.getInstance(context).fetchAuthToken() ?: return@setOnClickListener
+
+            val apiService = ApiClient.client.create(ApiService::class.java)
+            apiService.toggleFavorite("Bearer $token", f.id.toInt())
+                .enqueue(object : Callback<FavoriteResponse> {
+                    override fun onResponse(call: Call<FavoriteResponse>, response: Response<FavoriteResponse>) {
+                        if (response.isSuccessful) {
+                            val status = response.body()?.status
+                            f.isFavorite = status == "added"
+                            h.btnFavorite.setImageResource(
+                                if (f.isFavorite) R.drawable.ic_favorite else R.drawable.ic_favorite_border
+                            )
+                            val msg = if (f.isFavorite) "Ditambahkan ke favorit" else "Dihapus dari favorit"
+                            Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                    override fun onFailure(call: Call<FavoriteResponse>, t: Throwable) {
+                        Toast.makeText(context, "Gagal update favorit", Toast.LENGTH_SHORT).show()
+                    }
+                })
+        }
+
         h.btnAdd.setOnClickListener { listener.onAdd(f) }
         h.itemView.setOnClickListener { listener.onAdd(f) }
     }
@@ -106,6 +145,7 @@ class FoodAdapter(private val allItems: MutableList<FoodItem>, private val liste
         var rating: TextView = v.findViewById(R.id.tv_rating)
         var review: TextView = v.findViewById(R.id.tv_review)
         var badge: TextView = v.findViewById(R.id.tv_badge)
+        var btnFavorite: ImageView = v.findViewById(R.id.btn_favorite)
         var btnAdd: TextView = v.findViewById(R.id.btn_add)
     }
 }

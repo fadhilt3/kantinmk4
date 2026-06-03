@@ -4,7 +4,6 @@ package com.kantinku.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -23,7 +22,7 @@ public final class ActivityHistoryBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final ImageButton btnBack;
+  public final TextView btnBack;
 
   @NonNull
   public final ProgressBar progressBar;
@@ -34,7 +33,7 @@ public final class ActivityHistoryBinding implements ViewBinding {
   @NonNull
   public final TextView tvEmpty;
 
-  private ActivityHistoryBinding(@NonNull LinearLayout rootView, @NonNull ImageButton btnBack,
+  private ActivityHistoryBinding(@NonNull LinearLayout rootView, @NonNull TextView btnBack,
       @NonNull ProgressBar progressBar, @NonNull RecyclerView rvHistory,
       @NonNull TextView tvEmpty) {
     this.rootView = rootView;
@@ -72,7 +71,7 @@ public final class ActivityHistoryBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.btn_back;
-      ImageButton btnBack = ViewBindings.findChildViewById(rootView, id);
+      TextView btnBack = ViewBindings.findChildViewById(rootView, id);
       if (btnBack == null) {
         break missingId;
       }

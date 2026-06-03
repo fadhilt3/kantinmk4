@@ -1,5 +1,6 @@
 package com.kantinku.app.ui.menu
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -28,6 +29,7 @@ import com.kantinku.app.utils.DataProvider
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import com.kantinku.app.ui.favorite.FavoriteActivity
 
 class MenuFragment : Fragment() {
     private var adapter: FoodAdapter? = null
@@ -52,6 +54,11 @@ class MenuFragment : Fragment() {
                 food?.let { addToCart(it) }
             }
         })
+
+        v.findViewById<View>(R.id.btn_favorite).setOnClickListener {
+            startActivity(Intent(requireContext(), FavoriteActivity::class.java))
+        }
+
         rv.adapter = adapter
 
         val etSearch = v.findViewById<EditText>(R.id.et_search)

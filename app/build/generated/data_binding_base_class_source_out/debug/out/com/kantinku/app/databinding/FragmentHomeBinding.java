@@ -26,16 +26,13 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final LinearLayout avatarContainer;
 
   @NonNull
-  public final FrameLayout btnNotif;
+  public final FrameLayout btnFavorite;
 
   @NonNull
   public final LinearLayout categoryContainer;
 
   @NonNull
   public final EditText etSearch;
-
-  @NonNull
-  public final View notifDot;
 
   @NonNull
   public final LinearLayout popularContainer;
@@ -56,16 +53,15 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final TextView tvUsername;
 
   private FragmentHomeBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout avatarContainer,
-      @NonNull FrameLayout btnNotif, @NonNull LinearLayout categoryContainer,
-      @NonNull EditText etSearch, @NonNull View notifDot, @NonNull LinearLayout popularContainer,
+      @NonNull FrameLayout btnFavorite, @NonNull LinearLayout categoryContainer,
+      @NonNull EditText etSearch, @NonNull LinearLayout popularContainer,
       @NonNull RecyclerView rvMenu, @NonNull TextView tvAvatar, @NonNull TextView tvGreeting,
       @NonNull TextView tvSeeAll, @NonNull TextView tvUsername) {
     this.rootView = rootView;
     this.avatarContainer = avatarContainer;
-    this.btnNotif = btnNotif;
+    this.btnFavorite = btnFavorite;
     this.categoryContainer = categoryContainer;
     this.etSearch = etSearch;
-    this.notifDot = notifDot;
     this.popularContainer = popularContainer;
     this.rvMenu = rvMenu;
     this.tvAvatar = tvAvatar;
@@ -107,9 +103,9 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btn_notif;
-      FrameLayout btnNotif = ViewBindings.findChildViewById(rootView, id);
-      if (btnNotif == null) {
+      id = R.id.btn_favorite;
+      FrameLayout btnFavorite = ViewBindings.findChildViewById(rootView, id);
+      if (btnFavorite == null) {
         break missingId;
       }
 
@@ -122,12 +118,6 @@ public final class FragmentHomeBinding implements ViewBinding {
       id = R.id.et_search;
       EditText etSearch = ViewBindings.findChildViewById(rootView, id);
       if (etSearch == null) {
-        break missingId;
-      }
-
-      id = R.id.notif_dot;
-      View notifDot = ViewBindings.findChildViewById(rootView, id);
-      if (notifDot == null) {
         break missingId;
       }
 
@@ -167,9 +157,9 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeBinding((LinearLayout) rootView, avatarContainer, btnNotif,
-          categoryContainer, etSearch, notifDot, popularContainer, rvMenu, tvAvatar, tvGreeting,
-          tvSeeAll, tvUsername);
+      return new FragmentHomeBinding((LinearLayout) rootView, avatarContainer, btnFavorite,
+          categoryContainer, etSearch, popularContainer, rvMenu, tvAvatar, tvGreeting, tvSeeAll,
+          tvUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

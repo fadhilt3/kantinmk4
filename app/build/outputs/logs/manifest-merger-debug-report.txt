@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\kantinmk4\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from E:\kantinmk4\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from E:\kantinmk4\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from E:\kantinmk4\app\src\main\AndroidManifest.xml:2:1-54:12
+ADDED from E:\kantinmk4\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from E:\kantinmk4\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from E:\kantinmk4\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from E:\kantinmk4\app\src\main\AndroidManifest.xml:2:1-58:12
 MERGED from [androidx.databinding:viewbinding:8.2.0] C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\26a08be7ef5ea8592cc239a9248814f3\transformed\jetified-viewbinding-8.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\c383eee0678a8e695b2e2a3138370dc8\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\29edd52866b6fa1ae06577ee5e243371\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -69,8 +69,8 @@ ADDED from E:\kantinmk4\app\src\main\AndroidManifest.xml:6:5-76
 	android:name
 		ADDED from E:\kantinmk4\app\src\main\AndroidManifest.xml:6:22-74
 application
-ADDED from E:\kantinmk4\app\src\main\AndroidManifest.xml:8:5-53:19
-INJECTED from E:\kantinmk4\app\src\main\AndroidManifest.xml:8:5-53:19
+ADDED from E:\kantinmk4\app\src\main\AndroidManifest.xml:8:5-57:19
+INJECTED from E:\kantinmk4\app\src\main\AndroidManifest.xml:8:5-57:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\c383eee0678a8e695b2e2a3138370dc8\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\c383eee0678a8e695b2e2a3138370dc8\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ASUS ROG G513\.gradle\caches\9.0-milestone-1\transforms\29edd52866b6fa1ae06577ee5e243371\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -183,6 +183,14 @@ ADDED from E:\kantinmk4\app\src\main\AndroidManifest.xml:49:9-51:51
 		ADDED from E:\kantinmk4\app\src\main\AndroidManifest.xml:50:13-37
 	android:name
 		ADDED from E:\kantinmk4\app\src\main\AndroidManifest.xml:49:19-61
+activity#com.kantinku.app.ui.favorite.FavoriteActivity
+ADDED from E:\kantinmk4\app\src\main\AndroidManifest.xml:53:9-65
+	android:name
+		ADDED from E:\kantinmk4\app\src\main\AndroidManifest.xml:53:19-63
+activity#com.kantinku.app.ui.about.AboutActivity
+ADDED from E:\kantinmk4\app\src\main\AndroidManifest.xml:55:9-59
+	android:name
+		ADDED from E:\kantinmk4\app\src\main\AndroidManifest.xml:55:19-57
 uses-sdk
 INJECTED from E:\kantinmk4\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\kantinmk4\app\src\main\AndroidManifest.xml

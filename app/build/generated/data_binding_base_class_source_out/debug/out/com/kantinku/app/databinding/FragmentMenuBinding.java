@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,6 +22,9 @@ public final class FragmentMenuBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final ImageView btnFavorite;
+
+  @NonNull
   public final LinearLayout categoryFilter;
 
   @NonNull
@@ -29,9 +33,11 @@ public final class FragmentMenuBinding implements ViewBinding {
   @NonNull
   public final RecyclerView rvMenu;
 
-  private FragmentMenuBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout categoryFilter,
-      @NonNull EditText etSearch, @NonNull RecyclerView rvMenu) {
+  private FragmentMenuBinding(@NonNull LinearLayout rootView, @NonNull ImageView btnFavorite,
+      @NonNull LinearLayout categoryFilter, @NonNull EditText etSearch,
+      @NonNull RecyclerView rvMenu) {
     this.rootView = rootView;
+    this.btnFavorite = btnFavorite;
     this.categoryFilter = categoryFilter;
     this.etSearch = etSearch;
     this.rvMenu = rvMenu;
@@ -64,6 +70,12 @@ public final class FragmentMenuBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_favorite;
+      ImageView btnFavorite = ViewBindings.findChildViewById(rootView, id);
+      if (btnFavorite == null) {
+        break missingId;
+      }
+
       id = R.id.category_filter;
       LinearLayout categoryFilter = ViewBindings.findChildViewById(rootView, id);
       if (categoryFilter == null) {
@@ -82,7 +94,8 @@ public final class FragmentMenuBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentMenuBinding((LinearLayout) rootView, categoryFilter, etSearch, rvMenu);
+      return new FragmentMenuBinding((LinearLayout) rootView, btnFavorite, categoryFilter, etSearch,
+          rvMenu);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

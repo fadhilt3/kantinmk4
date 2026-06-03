@@ -25,6 +25,9 @@ public final class ItemFoodCardBinding implements ViewBinding {
   public final TextView btnAdd;
 
   @NonNull
+  public final ImageView btnFavorite;
+
+  @NonNull
   public final ImageView imgFood;
 
   @NonNull
@@ -52,11 +55,13 @@ public final class ItemFoodCardBinding implements ViewBinding {
   public final TextView tvReview;
 
   private ItemFoodCardBinding(@NonNull CardView rootView, @NonNull TextView btnAdd,
-      @NonNull ImageView imgFood, @NonNull LinearLayout layoutEmoji, @NonNull TextView tvBadge,
-      @NonNull TextView tvEmoji, @NonNull TextView tvKantin, @NonNull TextView tvName,
-      @NonNull TextView tvPrice, @NonNull TextView tvRating, @NonNull TextView tvReview) {
+      @NonNull ImageView btnFavorite, @NonNull ImageView imgFood, @NonNull LinearLayout layoutEmoji,
+      @NonNull TextView tvBadge, @NonNull TextView tvEmoji, @NonNull TextView tvKantin,
+      @NonNull TextView tvName, @NonNull TextView tvPrice, @NonNull TextView tvRating,
+      @NonNull TextView tvReview) {
     this.rootView = rootView;
     this.btnAdd = btnAdd;
+    this.btnFavorite = btnFavorite;
     this.imgFood = imgFood;
     this.layoutEmoji = layoutEmoji;
     this.tvBadge = tvBadge;
@@ -98,6 +103,12 @@ public final class ItemFoodCardBinding implements ViewBinding {
       id = R.id.btn_add;
       TextView btnAdd = ViewBindings.findChildViewById(rootView, id);
       if (btnAdd == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_favorite;
+      ImageView btnFavorite = ViewBindings.findChildViewById(rootView, id);
+      if (btnFavorite == null) {
         break missingId;
       }
 
@@ -155,8 +166,8 @@ public final class ItemFoodCardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemFoodCardBinding((CardView) rootView, btnAdd, imgFood, layoutEmoji, tvBadge,
-          tvEmoji, tvKantin, tvName, tvPrice, tvRating, tvReview);
+      return new ItemFoodCardBinding((CardView) rootView, btnAdd, btnFavorite, imgFood, layoutEmoji,
+          tvBadge, tvEmoji, tvKantin, tvName, tvPrice, tvRating, tvReview);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

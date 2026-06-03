@@ -44,16 +44,12 @@
         "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_tag_blue.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_fragment_cart.xml.flat",
-        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\fragment_cart.xml"
-    },
-    {
         "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_btn_primary.xml.flat",
         "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_btn_primary.xml"
     },
     {
-        "merged": "com.kantinku.app-merged_res-34:/layout_fragment_profile.xml.flat",
-        "source": "com.kantinku.app-main-36:/layout/fragment_profile.xml"
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_fragment_cart.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\fragment_cart.xml"
     },
     {
         "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\mipmap-xxxhdpi_ic_launcher.xml.flat",
@@ -84,12 +80,28 @@
         "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_input.xml"
     },
     {
+        "merged": "com.kantinku.app-merged_res-34:/layout_fragment_home.xml.flat",
+        "source": "com.kantinku.app-main-36:/layout/fragment_home.xml"
+    },
+    {
         "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_qty.xml.flat",
         "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_qty.xml"
     },
     {
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_about.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_about.xml"
+    },
+    {
         "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_welcome.xml.flat",
         "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_ic_favorite_border.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\ic_favorite_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_favorite.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_favorite.xml"
     },
     {
         "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_tag_green.xml.flat",
@@ -188,6 +200,10 @@
         "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_checkout.xml"
     },
     {
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_ic_favorite.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\ic_favorite.xml"
+    },
+    {
         "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_notification.xml.flat",
         "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_notification.xml"
     },
@@ -200,12 +216,20 @@
         "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\mipmap-mdpi\\ic_launcher_round.xml"
     },
     {
+        "merged": "com.kantinku.app-merged_res-34:/drawable_bg_primary_gradient.xml.flat",
+        "source": "com.kantinku.app-main-36:/drawable/bg_primary_gradient.xml"
+    },
+    {
         "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\drawable_bg_chip_default.xml.flat",
         "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\drawable\\bg_chip_default.xml"
     },
     {
         "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_fragment_menu.xml.flat",
         "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\fragment_menu.xml"
+    },
+    {
+        "merged": "com.kantinku.app-merged_res-34:/drawable_bg_promo2.xml.flat",
+        "source": "com.kantinku.app-main-36:/drawable/bg_promo2.xml"
     },
     {
         "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_payment_qris.xml.flat",
@@ -242,6 +266,10 @@
     {
         "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_activity_payment_tunai.xml.flat",
         "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\activity_payment_tunai.xml"
+    },
+    {
+        "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\layout_item_developer.xml.flat",
+        "source": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-main-36:\\layout\\item_developer.xml"
     },
     {
         "merged": "C:\\Users\\ASUS ROG G513\\.gradle\\daemon\\9.0-milestone-1\\com.kantinku.app-merged_res-34:\\mipmap-hdpi_ic_launcher.xml.flat",

@@ -28,15 +28,15 @@
             <!-- Notif + Avatar -->
             <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
                 android:orientation="horizontal" android:gravity="center_vertical">
-                <FrameLayout android:id="@+id/btn_notif"
+                <FrameLayout android:id="@+id/btn_favorite"
                     android:layout_width="40dp" android:layout_height="40dp"
                     android:layout_marginEnd="10dp">
-                    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-                        android:text="🔔" android:textSize="20sp" android:gravity="center"/>
-                    <View android:id="@+id/notif_dot"
-                        android:layout_width="8dp" android:layout_height="8dp"
-                        android:background="@drawable/bg_notif_dot"
-                        android:layout_gravity="top|end"/>
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_favorite"
+                        android:contentDescription="Favorit"/>
                 </FrameLayout>
                 <LinearLayout android:id="@+id/avatar_container"
                     android:layout_width="40dp" android:layout_height="40dp"
@@ -91,7 +91,7 @@
 
                 <LinearLayout android:layout_width="0dp" android:layout_height="130dp"
                     android:layout_weight="1" android:orientation="vertical" android:gravity="center_vertical"
-                    android:background="@drawable/bg_primary_gradient" android:padding="16dp"
+                    android:background="@drawable/bg_promo2" android:padding="16dp"
                     android:layout_marginStart="8dp">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                         android:text="⚡ FLASH" android:textSize="10sp" android:textStyle="bold"

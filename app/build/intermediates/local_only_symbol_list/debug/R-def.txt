@@ -66,6 +66,7 @@ drawable bg_input_focused
 drawable bg_notif_dot
 drawable bg_primary_gradient
 drawable bg_promo
+drawable bg_promo2
 drawable bg_qty
 drawable bg_qty_button
 drawable bg_search
@@ -74,6 +75,8 @@ drawable bg_tag_green
 drawable bg_tag_orange
 drawable bg_tag_red
 drawable bg_tag_yellow
+drawable ic_favorite
+drawable ic_favorite_border
 font nunito
 id avatar_container
 id avatar_view
@@ -86,12 +89,12 @@ id btn_copy_bca
 id btn_copy_bni
 id btn_copy_mandiri
 id btn_dana
+id btn_favorite
 id btn_gopay
 id btn_history
 id btn_home
 id btn_login
 id btn_minus
-id btn_notif
 id btn_ovo
 id btn_paid
 id btn_pay
@@ -106,6 +109,7 @@ id card_tunai
 id cart_badge
 id category_container
 id category_filter
+id developer_container
 id empty_state
 id et_confirm
 id et_email
@@ -122,11 +126,11 @@ id icon_container
 id img_food
 id layout_buttons
 id layout_emoji
+id layout_empty
 id lbl_cart
 id lbl_home
 id lbl_menu
 id lbl_profile
-id notif_dot
 id panel_ewallet
 id panel_qris
 id panel_transfer
@@ -142,6 +146,7 @@ id row_favorites
 id row_history
 id row_logout
 id rv_cart
+id rv_favorites
 id rv_history
 id rv_menu
 id rv_notif
@@ -152,12 +157,16 @@ id tab_profile
 id tv_avatar
 id tv_badge
 id tv_clear
+id tv_count
+id tv_dev_name
+id tv_dev_role
 id tv_email
 id tv_emoji
 id tv_empty
 id tv_forgot
 id tv_greeting
 id tv_icon
+id tv_initials
 id tv_items
 id tv_kantin
 id tv_login
@@ -185,7 +194,9 @@ id tv_total
 id tv_username
 id tv_username_badge
 id unread_dot
+layout activity_about
 layout activity_checkout
+layout activity_favorite
 layout activity_history
 layout activity_login
 layout activity_main
@@ -205,6 +216,7 @@ layout fragment_home
 layout fragment_menu
 layout fragment_profile
 layout item_cart
+layout item_developer
 layout item_food
 layout item_food_card
 layout item_food_popular

@@ -76,11 +76,17 @@ class RegisterActivity : AppCompatActivity() {
             ) {
                 if (response.isSuccessful) {
                     val body = response.body()!!
-                    getInstance(this@RegisterActivity).saveLogin(
+                    val sm = getInstance(this@RegisterActivity)
+
+                    // Simpan data user dengan benar
+                    sm.saveLogin(
                         body.user.name,
                         body.user.email,
-                        body.access_token
+                        body.user.name
                     )
+                    // Simpan token terpisah
+                    sm.saveToken(body.access_token)
+
                     Toast.makeText(
                         this@RegisterActivity,
                         "Akun berhasil dibuat! Selamat datang, ${body.user.name} 🎉",
